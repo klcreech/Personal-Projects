@@ -7,18 +7,18 @@ var mainDiv =  document.getElementById("CanvasBox");
 // create Name input
 var bsInput_bday = document.createElement ("input"); 
 
-		bsInput_bday.id = "dpicker";	
-		bsInput_bday.type = "text";
+	bsInput_bday.id = "dpicker";	
+	bsInput_bday.type = "text";
      	bsInput_bday.style.position ="absolute";
         bsInput_bday.style.top = "55px";		
-		bsInput_bday.style.left = "150px";
+	bsInput_bday.style.left = "150px";
         bsInput_bday.style.height = "15px"; 	
         bsInput_bday.style.width = "120px"; 
-		bsInput_bday.style.fontSize = "12px";	
-		bsInput_bday.style.color = "#fff";	
-		bsInput_bday.style.border = "1px solid white";
-		bsInput_bday.style.backgroundColor= "#40acff";
-		bsInput_bday.style.opacity= ".75";
+	bsInput_bday.style.fontSize = "12px";	
+	bsInput_bday.style.color = "#fff";	
+	bsInput_bday.style.border = "1px solid white";
+	bsInput_bday.style.backgroundColor= "#40acff";
+	bsInput_bday.style.opacity= ".75";
      	bsInput_bday.placeholder=" mm / dd / yyyy";		
 	
 		var bsInput_name_append = mainDiv.appendChild(bsInput_bday);	
