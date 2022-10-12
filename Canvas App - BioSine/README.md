@@ -1,4 +1,4 @@
 
 <h1>Canvas App Project Project - BioSine</h1><br>
- <p>In an effort to manually code a responsive design that is cross browser compatible I felt it would be good practice to code it from scratch. All the images were created in GIMP. I learned a valuable lesson by doing this project. SCSS helps so you don't have 2000 lines of CSS trying this.</p><br<br>
-<p>You can view the website right here <a href="https://www.kerrycreech.art/synapps/Canvas/bioSine.html" target="_blank" width="330" height="500">BioSine</a></p>
+ <p>In an effort to take a trigonometric equation and convert it into a interactive app I decided to create one using canvas and its abilities to animate. All the images were created in GIMP. I learned alot about how canvas works and also how the animation.js construct works. This also helped with my knowledge of JQuery.</p><br<br>
+<p>You can view the website right here <a href="https://www.kerrycreech.art/synapps/Canvas/bioSine.html">BioSine</a></p>
