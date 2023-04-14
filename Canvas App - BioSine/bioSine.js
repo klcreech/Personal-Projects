@@ -2,31 +2,36 @@
 
 //input form area with Jquery
 
-//get canvasBox div
-var mainDiv =  document.getElementById("CanvasBox");
-// create Name input
-var bsInput_bday = document.createElement ("input"); 
+// get canvasBox div
+const mainDiv = document.getElementById("CanvasBox");
 
-	bsInput_bday.id = "dpicker";	
-	bsInput_bday.type = "text";
-     	bsInput_bday.style.position ="absolute";
-        bsInput_bday.style.top = "55px";		
-	bsInput_bday.style.left = "150px";
-        bsInput_bday.style.height = "15px"; 	
-        bsInput_bday.style.width = "120px"; 
-	bsInput_bday.style.fontSize = "12px";	
-	bsInput_bday.style.color = "#fff";	
-	bsInput_bday.style.border = "1px solid white";
-	bsInput_bday.style.backgroundColor= "#40acff";
-	bsInput_bday.style.opacity= ".75";
-     	bsInput_bday.placeholder=" mm / dd / yyyy";		
-	
-		var bsInput_name_append = mainDiv.appendChild(bsInput_bday);	
-		
-		//jquery event setup for input box
-      $(document).ready(function() {$("#dpicker").datepicker(); $("#dpicker").change(function() {			 
-		  $("#dpicker").select();
-		  $("#dpicker").blur();});});
+// create date picker input
+const datePickerInput = document.createElement("input");
+datePickerInput.id = "dpicker";
+datePickerInput.type = "text";
+datePickerInput.style.position = "absolute";
+datePickerInput.style.top = "55px";
+datePickerInput.style.left = "150px";
+datePickerInput.style.height = "15px";
+datePickerInput.style.width = "120px";
+datePickerInput.style.fontSize = "12px";
+datePickerInput.style.color = "#fff";
+datePickerInput.style.border = "1px solid white";
+datePickerInput.style.backgroundColor = "#40acff";
+datePickerInput.style.opacity = ".75";
+datePickerInput.placeholder = "mm / dd / yyyy";
+
+// append date picker input to main div
+mainDiv.appendChild(datePickerInput);
+
+// set up jQuery datepicker plugin and event listener for input box
+$(document).ready(function() {
+  $("#dpicker").datepicker();
+  $("#dpicker").on("change", function() {
+    // select and blur input element
+    $(this).select().blur();
+  });
+});
 
 // Canvas Graph Setup
 
@@ -694,6 +699,3 @@ return   Math.sin(2*Math.PI * x/ 33)  ;
 anim.start();
 };
 };
-
-
-
